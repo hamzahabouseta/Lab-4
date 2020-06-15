@@ -1,0 +1,229 @@
+<!-- This file contains many elements adapted from the online tutoral -->
+<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
+
+<!-- Images source: -->
+<!-- jule.jpg taken from https://www.freepik.com/premium-vector/cartoon-successful-hairdresser_3951066.htm -->
+<!-- Erwind.jpb https://www.kijiji.ca/v-construction-trades-jobs/winnipeg/bicycle-mechanic/1499188319 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head should contain an appropriate title for your site -->
+<head>
+    <title>Module 4 - Labo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- Your own additional style sheet -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+
+    <!-- Medium size container, padding 3, margins 3, background dark, text is white -->
+    <!-- Should show the name of your company with an image or logo -->
+    <!-- Bootstrap has its own font for H1, H2, p, etc.  -->
+    <!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
+    <!-- Use your own CSS file to change those fonts if they do not correspond to your company's look -->
+    <div class="container-md p-3 my-3 border bg-dark text-white">
+        <h1>Hamzah's Haircuts</h1>
+        <p>111 Main Street, Ottawa, Ontario</p>
+        <p>613-123-4567</p>
+    </div>
+
+    <!-- Bootstrap contains a grid system you can explore https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp -->
+    <!-- It can be useful for placement of information -->
+
+    <div class="container-md p-3 my-3 border bg-dark text-white">
+      <h2> About Us</h2>
+      <p> We are a small barbershop in Downtown, Ottawa. We cater specically for men style cuts and have been in business for 20 years.</p>
+    </div>
+    <!-- When you have messages to tell, remember that center align is not always the best choice -->
+
+
+ <!-- https://unsplash.com/photos/EW_rqoSdDes -->   
+
+</div>
+<div class="text-center">
+    <img src="./images/barbershop.jpg" width="600" height="400" >
+</div>
+
+
+
+    <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
+    <!-- Might be (or not) useful to show some information to the user -->
+    <div class="container">
+        <h2>Our Services</h2>
+        <p>Here is a list of services offered</p>            
+        <table class="table  table-hover">
+            <thead>
+            <tr>
+                <th>Service</th>
+                <th>Price</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Men's Haircut</td>
+                <td> $20</td>
+            </tr>
+            <tr>
+                <td>Beard Trim</td>
+                <td>$10</td>
+            </tr>
+            <tr>
+                <td>Haircut & Beard Trim</td>
+                <td>$25</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+   
+
+    <!-- Bootstrap has components for alerts: https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
+    <!-- These can be useful for making sure someone reads something before continuing -->
+    
+    <div class="container">
+        <h2>Book an Appointment</h2>
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#mySurvey">Make a Booking</button>
+          
+        <!-- Modal -->
+        <div class="modal fade" id="mySurvey" role="dialog">
+            <div class="modal-dialog">  
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h2>Book an appointment</h2>
+                        <p>Please fill in the form</p>
+                        <form>
+                          
+                            <label>Name: <input type="text" value=""></label>
+
+                            <label>Email: <input type="text" value=""></label>
+
+                            <label>What Date: <input type="date" value=""></label>
+                          
+                            <label>What Time: <input type="time" value=""></label>
+                          
+                        </form>
+                       <button type="button" class="btn btn-dark" data-dismiss="modal"> Book Appointment</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>     
+        </div>
+        </div>    
+    </div>
+
+    <p></p>
+    <p></p>
+
+    <p></p>
+
+    <!-- You'll certainly need buttons at some point in your site -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_buttons.asp -->
+    <!-- Remember how we talked about choosing a hue and changing the saturation for active/inactive -->
+    <!-- This idea is already part of the components in Bootstrap 
+    
+    https://improb.com/best-medium-length-hairstyles-for-men/
+    https://www.pinterest.ca/pin/292100725822098719/
+
+-->
+    <div class="container">
+    <h2>Gallery</h2>
+    <p>We do all types of men's haircuts, from fades to long hair trims</p>   
+    <div >
+        <div class="column">
+          <img src="images/shorthair.jpg" width="200" height="200">
+
+          <img src="images/mediumhair.jpg" width="200" height="200" >
+    
+          <img src="images/longhair.jpg" width="200" height="200" >
+
+          
+        </div>
+       
+      </div>
+    </div>
+    <p></p>
+    <p></p>
+
+
+
+
+
+
+  <!-- Including a modal https://www.w3schools.com/bootstrap4/bootstrap_modal.asp -->
+    <!-- Modals are useful for additional information or questions -->
+    <!-- Here the modal is used for a little survey -->
+   
+
+   
+
+    <!-- Presenting the staff with cards: https://www.w3schools.com/bootstrap4/bootstrap_cards.asp -->
+    <!-- Card columns allows multiple cards next to each other -->
+    <!-- The first card's button doesn't go anywhere, it could be a modal --> 
+    <!-- My second card limits the information seen and uses collapsible to show more -->
+    <div class="container p-3">
+        <h2>Meet our hairdressers</h2>
+        <div class="card-columns">
+            <div class="card bg-dark" style="width:200px">
+
+               <!-- https://www.dreamstime.com/portrait-barber-posing-his-barbershop-razor-his-hand-portrait-spaniard-barber-posing-his-set-vintage-image147753621 -->
+                <img class="card-img-top" src="images/barber1.jpg" alt="Card image"  width="200" height="200">
+                <div class="card-body text-white">
+                    <h4 class="card-title">Michael</h4>
+                    <p class="card-text"></p>
+                    
+                    <a href="#profile" class="btn btn-dark" data-toggle="collapse">See Profile</a>
+                    <div id="profile" class="collapse p-3">
+                        <p class="card-text text-white">Mike is the founder and a fan favourite who has been cutting hair for 20 years </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-dark" style="width:200px">
+                <img class="card-img-top" src="images/barber2.jpg" alt="Card image"   width="200" height="200" >
+                <div class="card-body text-white">
+                    <h4 class="card-title">Joseph</h4>
+                    
+                    <a href="#profile1" class="btn btn-dark" data-toggle="collapse">See Profile</a>
+                    <div id="profile1" class="collapse p-3">
+                        <p class="card-text text-white">Joseph is Mike's brother. His specialty is fades; he's been cutting hair for 15 years
+                        </p>
+                    </div>
+                    
+                   
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <!-- A different approach would be to make the whole staff information collapsible -->
+    <!-- Here a block button (taking the full width) opens/closes the collapsible -->
+    <!-- Here a single card is used, but card columns could be used -->
+
+
+    <!-- Collapsible with multiple items - accordion -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
+    <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
+    <!-- could work well.  You can use other patterns too.  This is just an example. -->
+    
+
+</body>
